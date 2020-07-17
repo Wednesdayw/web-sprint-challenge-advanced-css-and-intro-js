@@ -138,62 +138,26 @@ button:hover{
     width:100%;
 }
 
-/* max-width media queries into your project at 800px and 500px */
+/* media queries 500px */
 
-@media(max-width: 800px){
-
-    .nav a{
-    font-size: 75%
-    }
-
-    .artists-container{
-      display: flex;
-      flex-flow: column;
-      align-items: center;
-      /* flex-wrap: wrap; */
-      
-    
-    }
-    .artist{
-    font-size: 50%;
-    }
-    
-    
-.artist img{
-    margin: 2%;	
-    margin-top: 4%;	
-    margin-left: auto;	
-    margin-right: auto;	
-    border-radius: 2%;	
-
-}
-
-}
     
 @media(max-width: 500px) {
 
-    .nav a{
-        font-size: 50%
-        }
-    
-        .artists-container{
-          display: flex;
-          flex-flow: column;
-          align-items: center;
-          /* flex-wrap: wrap; */
-          
-        
-        }
-        .artist{
-        font-size: 50%;
-        }
-        
-        
-    .artist img{
-        margin: 2%;	
-        margin-top: auto;	
-        margin-left: auto;	
-        margin-right: auto;	
-        border-radius: 2%;	
+
+      .artists-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .artists-container .artist {
+        width: 100%;
+      }
+      .artist {
+        padding-top: 5%;
+        padding-bottom: 5%;
+      }
+      .artist img {
+        padding-bottom: 3%;
+      }
     
     }
