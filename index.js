@@ -240,11 +240,11 @@ console.log(getArtistByIndex(artists, [0]));
 
 /* Task 4: Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born in and died in 20th century (1900-2000) example born in 1901 and died in 1959 - included / born in 1889 and died in 1925 not included - should return ["Salvador Dali", "Frida Kahlo"]*/
 
-function get20s(/* Code here */){
+// function get20s(/* Code here */){
 
-  /* Code here */
+//   /* Code here */
 
-}
+// }
 
 
 /* Task 5: Create a function called `removeArtist` that takes two arguments:
@@ -257,11 +257,11 @@ function get20s(/* Code here */){
  * 
  * Note that sucessfully invoking this function multiple times without refreshing your browser will continuously remove artists from the array until there are none left. If you refresh your browser, the data will reset.  
 */
-function removeArtist(arr, index) {
-  arr.splice(index,1);
-  console.log (arr.length);
-}
-removeArtist(artists,0);
+// function removeArtist(arr, index) {
+//   arr.splice(index,1);
+//   console.log (arr.length);
+// }
+// removeArtist(artists,0);
  
 
 /**
@@ -277,11 +277,20 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 
 At the end, this function should return the new array with information added"*/
 
-function addArtist(/* Code here */){
-
-    /* Code here */
+function addArtist(arr, newArray){
+  arr.push(newArray);
+  console.log (arr);
 
   }
+  const newArray={
+    id: 20,
+    name: "Camilo Jose Cela",
+    years: "1916-2002",
+    genre: "Novelist",
+    nationality: "Spanish",
+    bio: "Camilo Jose Cela y Trulock, 1st Marquess of Iria Flavia (Spanish: [kamilo xoˈse ˈθela]; 11 May 1916 – 17 January 2002) was a Spanish novelist, poet, story writer and essayist associated with the Generation of '36 movement. He was awarded the 1989 Nobel Prize in Literature for a rich and intensive prose, which with restrained compassion forms a challenging vision of man's vulnerability.",
+    };
+    addArtist(artists, newArray);
 
 /* Task 7: Create a function called lotsOfArt() that takes one argument: 
 
