@@ -23,6 +23,9 @@ vertical-align: baseline;
 html{
     font-size:62.5%;
 }
+div { 
+    border: 2px solid grey;
+}
 body{
     font-size:1.6rem;
     line-height: 1.5;
@@ -134,3 +137,63 @@ button:hover{
 .artist img{
     width:100%;
 }
+
+/* max-width media queries into your project at 800px and 500px */
+
+@media(max-width: 800px){
+
+    .nav a{
+    font-size: 75%
+    }
+
+    .artists-container{
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      /* flex-wrap: wrap; */
+      
+    
+    }
+    .artist{
+    font-size: 50%;
+    }
+    
+    
+.artist img{
+    margin: 2%;	
+    margin-top: 4%;	
+    margin-left: auto;	
+    margin-right: auto;	
+    border-radius: 2%;	
+
+}
+
+}
+    
+@media(max-width: 500px) {
+
+    .nav a{
+        font-size: 50%
+        }
+    
+        .artists-container{
+          display: flex;
+          flex-flow: column;
+          align-items: center;
+          /* flex-wrap: wrap; */
+          
+        
+        }
+        .artist{
+        font-size: 50%;
+        }
+        
+        
+    .artist img{
+        margin: 2%;	
+        margin-top: auto;	
+        margin-left: auto;	
+        margin-right: auto;	
+        border-radius: 2%;	
+    
+    }
